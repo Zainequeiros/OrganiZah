@@ -1,0 +1,121 @@
+:root {
+    --title-color: #af9006;
+    --primary-color: #1b1a01;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    -webkit-font-smoothing: antialised;
+    background-image: url('planodefundo.jpg');
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logotipo {
+    max-width: 5%;
+    max-height: 5%;
+    border-radius: 50%;
+    border: transparent;
+}
+
+header strong {
+    background-color: transparent;
+    max-width: 20%;
+    max-height: 10%;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid #e4c74a;
+    border-radius: 5px;
+    color: #000000;
+}
+
+.CriarTarefa {
+    display: block;
+    background-color: #fff3bc;
+    margin: auto;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #ebc624;
+    width: 170px;
+    height: 125px;
+}
+
+legend {
+    color: var(--title-color);
+    text-align: center;
+}
+
+#tarefa {
+    background-color: #fffedd;
+    max-width: 100%;
+    max-height: 10%;
+    text-align: center;
+    border-radius: 5px;
+    border-color: #f0e658;
+}
+
+#novaTarefa {
+    background-color: #faf9c2;
+    font-size: 12px;
+    max-width: 50%;
+    max-height: 5%;
+    margin-top: 20px;
+    padding: 1px;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid #ebc624;
+    color: #a09d0b;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#novaTarefa:hover {
+    background-color: #e4c74a;
+}
+
+#tarefa::placeholder {
+    color: var(--title-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  cursor: pointer;
+  color: var(--primary-color);
+  font-family: 'Roboto', sans-serif;
+  background-color: #fcf8cb;
+  font-size: 15px;
+  max-width: 50%;
+  max-height: 5%;
+  margin-top: 5px;
+  padding: 1px;
+  text-align: left;
+  border-radius: 5px;
+  border: 2px solid #e9d478;
+}
+
+ul li:nth-child(odd) {
+  background: #ffe3c9;
+}
+
+.close {
+  padding: 3px 3px 3px 3px;
+}
+  
+.close:hover {
+  background-color: red;
+  color: white;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+    <head>
+        <meta charset="UTF-8">
+        <title>OrganiZah</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <header>
+            <strong>Seu quadro pessoal de organização</strong>
+            <img id="logotipo" src="assets/logotipo.JPG" alt="OrganiZah">
+        </header>
+        <main>
+            <div class="CriarTarefa">
+                <legend>
+                    <h3>Nova Tarefa</h3>
+                </legend>
+                <div class="camposDoForm">
+                    <input id="tarefa" type="text" name="tarefa" placeholder="Tarefa" required="required">
+                </div>
+                <span id="novaTarefa" onclick="newElement()" class="addBtn">Criar Tarefa</span>
+            </div>
+            <ul id="minhaLista" value=""></ul>
+        </main>
+        <script src="scripts/index.js"></script>
+    </body>
+</html>
